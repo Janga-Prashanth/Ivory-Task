@@ -1,11 +1,7 @@
-.content{
-	background: #fbfbfb;
-	border: 1px solid #dddddd;
-	border-radius: 5px;
-}
-
-.tab-custom {
-	border-bottom: 1px solid #d7d7d7;
+.content {
+    background: #fbfbfb;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
 }
 
 .challenge-info {
@@ -13,24 +9,25 @@
     font-weight: 600;
     font-size: 20;
 }
+
 .challenge {
-font-weight: 600;
- font-size: 20;
-}
-
-.nav-link {	
-	font-family: "Fira Sans",system-ui,-apple-system,arial;
     font-weight: 600;
-    font-variant-ligatures: none!important;
-    font-feature-settings: "liga" 0!important;
-    font-size: 20px;
+    font-size: 20;
 }
 
-.nav-tabs button .nav-link{
+.nav-link {
+    font-family: "Fira Sans", system-ui, -apple-system, arial;
+    font-weight: 600;
+    font-variant-ligatures: none !important;
+    font-feature-settings: "liga" 0 !important;
     font-size: large;
 }
 
- #tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+/* .nav-tabs button .nav-link{
+    font-size: large;
+} */
+
+.nav-tabs .nav-link.active {
     color: #0e66d8 !important;
     background-color: transparent;
     border-color: transparent transparent #0e66d8 !important;
@@ -38,39 +35,52 @@ font-weight: 600;
 }
 
 .global-footer {
-    padding-top: 4rem;
-    padding-bottom: 3rem;
-    background: linear-gradient(300.69deg,#222126 17.28%,#222126 79.08%,#f87a43 146.83%);
+    /* padding-top: 4rem;
+    padding-bottom: 3rem; */
+    background: linear-gradient(300.69deg, #222126 17.28%, #222126 79.08%, #f87a43 146.83%);
     color: #fff;
 }
 
-.global-footer li a{
+.global-footer li a {
     color: white;
 }
 
-input[type='text'],[type='email']::placeholder
-    {   
-        text-align:center;      /* for Chrome, Firefox, Opera */
-    } 
+input[type='text'],
+[type='email']::placeholder {
+    text-align: center;
+    /*for Chrome, Firefox, Opera */
+}
+
+@media only screen and (max-width: 576px) {
+
+    /* For large screens: */
+    .menu {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* For large screens: */
+    .menu, .location, .contacts {
+        margin-top: 30px;
+    }
+}
 
 @media only screen and (min-width: 1024px) {
-	/* For large screens: */
-	.menu {margin-right: 100px; margin-left: 40px}
-  }
 
-  @media only screen and (min-width: 1440px) {
-	/* For large screens: */
-	.menu {margin-right: 100px; margin-left: 60px}
-  }
+    /* For large screens: */
+    .menu {
+        margin-right: 100px;
+        margin-left: 40px
+    }
+}
 
-  @media only screen and (max-width: 576px) {
-	/* For large screens: */
-	.menu {margin-top: 30px;}
-  }
+@media only screen and (min-width: 1440px) {
 
-  @media only screen and (min-width: 768px) {
-	/* For large screens: */
-	.menu ,.location, .contacts {margin-top: 30px;}
-  }
-
-   
+    /* For large screens: */
+    .menu {
+        margin-right: 100px;
+        margin-left: 60px
+    }
+}
